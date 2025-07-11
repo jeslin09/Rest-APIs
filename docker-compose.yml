@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    ports:
+      - "5001:5000"
+    environment:
+      - JWT_SECRET_KEY=13b27c068530e940d1f0f10a3773cb37adf1b736066bf495672ba583a1e0a206
+    volumes:
+      - .:/app
